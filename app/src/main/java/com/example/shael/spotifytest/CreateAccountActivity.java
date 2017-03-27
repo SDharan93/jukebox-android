@@ -5,22 +5,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class RoomActivity extends Activity {
+public class CreateAccountActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_room);
+        setContentView(R.layout.activity_create_account);
     }
 
     //TODO: implement this function
-    public void createRoom(View view) {
-        Intent intent = new Intent(this, CreateRoomActivity.class);
+    public void createNewAccount(View view) {
+        Intent intent = new Intent(this, RoomActivity.class);
         startActivity(intent);
     }
 
     //TODO: implement this function
-    public void joinRoom(View view) {
-
+    public void sendToAccountLogin(View view) {
+        Intent intent = new Intent(this, MyLoginActivity.class);
+        startActivity(intent);
     }
 }

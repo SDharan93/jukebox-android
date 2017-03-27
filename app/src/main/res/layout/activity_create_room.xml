@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.shael.spotifytest.CreateRoomActivity">
+
+    <ImageView
+        android:id="@+id/createRoomLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher" />
+
+    <EditText
+        android:id="@+id/roomNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Room Name"
+        android:inputType="text"
+        android:paddingTop="30dp"
+        android:paddingBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/hostUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"/>
+
+    <CheckBox
+        android:id="@+id/passwordCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Require Password to Join?"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:onClick="enablePasswordEditText"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/createRoomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Room"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:onClick="createRoom"/>
+
+</LinearLayout>
