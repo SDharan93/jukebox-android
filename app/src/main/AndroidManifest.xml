@@ -14,18 +14,22 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".MyLoginActivity" />
+
         <activity
             android:name="com.spotify.sdk.android.authentication.LoginActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <activity android:name=".LandingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".RoomActivity" />
-        <activity android:name=".CreateRoomActivity"></activity>
+        <activity android:name=".ChooseRoomActivity"/>
+        <activity android:name=".CreateRoomActivity" />
+        <activity android:name=".JoinRoomActivity"/>
     </application>
 
 </manifest>

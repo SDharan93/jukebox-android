@@ -31,7 +31,7 @@ public class LandingActivity extends Activity {
     }
 
     public void guestContinue(View view) {
-        Intent intent = new Intent(this, RoomActivity.class);
+        Intent intent = new Intent(this, ChooseRoomActivity.class);
         startActivity(intent);
     }
 }
