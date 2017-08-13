@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/open_menu"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:showAsAction="ifRoom"
+        android:title="Open Menu">
+
+        <menu>
+            <item
+                android:id="@+id/open_test_activity"
+                android:title="Test Activity" />
+        </menu>
+
+    </item>
+
+</menu>
